@@ -5,9 +5,7 @@ import java.util.Scanner;
 
 
 public class Syst {
-	int[] days=new int[10];
-	String[] motos=new String[10];
-	double[] fees=new double[10];
+	
 	public void welcomeHome() {
 		String[] cars={"别克商务","宝马550i","别克林萌大道"};
 		String[] seatCounts={">= 16","<16"};
@@ -17,7 +15,9 @@ public class Syst {
 		
 		Scanner input = new Scanner(System.in);
 		int n = input.nextInt();
-		
+		int[] days=new int[n];
+		String[] motos=new String[n];
+		double[] fees=new double[n];
 	    for(int i=0;i<n;i++){
 	    	System.out.println("第"+(i+1)+"辆车，请问你想租几天？");
 	    	int day = input.nextInt();
